@@ -41,10 +41,10 @@ shinyServer(function(input, output) {
       labs(y = 'Number of Prescriptions Written',  x  = element_blank()) + 
       theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = 'none', axis.title.x = element_blank())
   })
-  
-  output$genderbars <- renderPlot( {
-    reshape %>% 
-      filter(outcome == input$checkGender) %>% 
+
+  output$genderbars <- renderPlot({
+    reshape %>%
+      filter(outcome %in% input$checkGender) %>% 
       ggplot(
         aes(x = drug, y = value, group=outcome, fill = outcome)
       ) +
@@ -57,8 +57,6 @@ shinyServer(function(input, output) {
       theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
       scale_fill_discrete(name = "Gender", breaks=c("spp_female", "spp_male"),
                           labels=c("Female", "Male"))
-
+  
   })
-  
-  
 })

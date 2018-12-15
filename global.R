@@ -21,5 +21,4 @@ ods_by_drug <- readRDS('./data/ods_by_drug.RDS')
 colnames(state_info) <- c('Abbrev', 'state', "hs_grad_pct", "bach_pct",'uninsured_pct','unemployment_pct','poverty_pct')
 
 theme_set(theme_grey(base_size = 18)) 
-
   

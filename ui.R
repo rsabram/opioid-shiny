@@ -49,12 +49,11 @@ dashboardPage(
               ),
               h3('However, the most common opioids found in toxicity reports for accidental overdoses are heroin (which is not prescribed) and fentanyl. Although hydrocodone, oxycodone, and tramadol make up the majority of the opioid prescriptions, they do not have a significant presence in toxicity reports. ')
       ),
-      # Second tab content
+      # Third tab content
       tabItem(tabName = "scripts",
               h2("Script Analysis by Gender"),
               h4("In looking for trends in the data, we wanted to see what percentage of opioids scripts were written split by gender of the prescribers."),
               fluidPage(
-                
                 # Copy the chunk below to make a group of checkboxes
                 checkboxGroupInput("checkGender", label = h3("Select the prescriber gender"), 
                                    choices = list("Female" = "spp_female", "Male" = "spp_male"),
