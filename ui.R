@@ -80,7 +80,7 @@ dashboardPage(
               h4(em("Cocaine deaths rose 52% between 2015 and 2016. A BuzzFeed News analysis shows the role of fentanyl in this staggering trend.")),
               url_article <- a("Article |", href="https://www.buzzfeednews.com/article/scottpham/cocaine-fentanyl-opioid-overdoses", target="_blank"),
               url_repo <- a("GitHub Repo", href="https://github.com/BuzzFeedNews/2018-05-fentanyl-and-cocaine-overdose-deaths", target="_blank"),
-              h3("'Unintended Consequences' by Terrence McCoy"),
+              h3("''Unintended Consequences'' by Terrence McCoy"),
               h4(em("Inside the fallout of America’s crackdown on opioids")),
               wapo_url <- a("Article", href = "https://www.washingtonpost.com/graphics/2018/local/impact-of-americas-opioid-crackdown/?utm_term=.88f8bc2c2f6b", target = "_blank"),
               br(),
